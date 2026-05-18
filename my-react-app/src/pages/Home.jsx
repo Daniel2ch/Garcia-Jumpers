@@ -7,7 +7,6 @@ const Home = () => {
     { title: 'Tents', desc: 'Provide shade and shelter for your guests', link: '/tents', icon: '⛺' },
     { title: 'Tables & Chairs', desc: 'Comfortable seating for everyone', link: '/tables-chairs', icon: '🪑' },
     { title: 'Decorations', desc: 'Balloons, banners, and party aesthetics', link: '/decorations', icon: '🎈' },
-    { title: 'Inflatables', desc: 'Water slides and obstacle courses', link: '/inflatables', icon: '🌊' }
   ];
 
   return (
