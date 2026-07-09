@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+/my-react-app/node_modules/
+/.pnp
+.pnp.js
+
+# Production / Build outputs
+/dist/
+/my-react-app/dist/
+/build/
+dist-ssr
+
+# Testing
+/coverage/
+
+# OS Metadata
+.DS_Store
+my-react-app/.DS_Store
+Thumbs.db
+
+# API Keys & Secrets (Always keep local)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+*.pem
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# IDE & Text Editor configurations
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/

@@ -1,3 +1,4 @@
+import logoImg from '../images/Logo.jpeg';
 
 const Navbar = ({ activeTab, setActiveTab, contactInfo, language, setLanguage }) => {
   const handleLogoClick = (e) => {
