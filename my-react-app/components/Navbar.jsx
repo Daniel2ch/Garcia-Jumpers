@@ -1,17 +1,17 @@
 import logoImg from '../images/Logo.jpeg';
 
-const Navbar = ({ activeTab, setActiveTab, contactInfo, language, setLanguage }) => {
+const Navbar = ({ activeTab, setActiveTab, language, setLanguage }) => {
   const handleLogoClick = (e) => {
     e.preventDefault();
     setActiveTab('all');
-    
+
     // Smooth scroll to top of page
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleContactClick = (e) => {
     e.preventDefault();
-    
+
     // If we're on the About page, switch to home first, then scroll
     if (activeTab === 'about') {
       setActiveTab('all');
@@ -48,8 +48,8 @@ const Navbar = ({ activeTab, setActiveTab, contactInfo, language, setLanguage })
       </a>
       <div className="nav-links">
         {/* About Link */}
-        <a 
-          href="#about" 
+        <a
+          href="#about"
           onClick={handleAboutClick}
           className={`nav-link-btn ${activeTab === 'about' ? 'active' : ''}`}
         >
@@ -57,7 +57,7 @@ const Navbar = ({ activeTab, setActiveTab, contactInfo, language, setLanguage })
         </a>
 
         {/* Language Alternator Button */}
-        <button 
+        <button
           onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
           className="lang-toggle-btn"
           title={language === 'en' ? 'Cambiar a Español' : 'Switch to English'}
@@ -66,8 +66,8 @@ const Navbar = ({ activeTab, setActiveTab, contactInfo, language, setLanguage })
         </button>
 
         {/* Contact Scroll Button */}
-        <a 
-          href="#contact" 
+        <a
+          href="#contact"
           onClick={handleContactClick}
           className="contact-nav-btn"
         >

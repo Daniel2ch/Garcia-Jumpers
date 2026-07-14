@@ -26,7 +26,7 @@ export const products = [
     name: '20x20 Tent',
     nameEs: 'Carpa 20x20',
     category: 'tents',
-    price: '$XX.XX', 
+    price: '$XX.XX',
     priceEs: '$XX.XX',
     priceLabel: 'Replace with your price in productsData.js',
     priceLabelEs: 'Reemplace con su precio en productsData.js',
@@ -555,10 +555,10 @@ export const products = [
 ];
 
 export const contactInfo = {
-  phone: '555-123-4567', 
+  phone: '555-123-4567',
   phoneLabel: 'Replace with your business phone number in productsData.js',
   phoneLabelEs: 'Reemplace con su teléfono en productsData.js',
-  email: 'info@garciajumpers.com', 
+  email: 'info@garciajumpers.com',
   emailLabel: 'Replace with your business email in productsData.js',
   emailLabelEs: 'Reemplace con su correo en productsData.js',
   workingHours: 'Monday - Sunday: 8:00 AM - 7:00 PM',
@@ -574,7 +574,7 @@ export const contactInfo = {
 
 export const uiTranslations = {
   en: {
-    welcome_title: "Welcome to Garcia Jumpers",
+    welcome_title: "Welcome to CG Event Rentals",
     welcome_desc: "Your local choice for party rentals! We have bouncy houses, tents, chairs, tables, and decorations to make your event perfect.",
     explore_title: "Explore Our Products",
     search_placeholder: "Search tents, covers, slides...",
@@ -596,7 +596,7 @@ export const uiTranslations = {
     form_msg_label: "Equipment details & questions",
     form_msg_placeholder: "Tell us which items you are interested in (e.g. 20x20 Tent, Bouncy Castle)...",
     form_submit_btn: "Prepare Booking Inquiry",
-    form_success_title: "✅ Inquiry Message Created!",
+    form_success_title: "Inquiry Message Created!",
     form_success_desc: "Since this website does not connect to a database, please complete your booking request by either:",
     form_success_call: "Calling",
     form_success_email: "Emailing",
@@ -623,7 +623,7 @@ export const uiTranslations = {
     click_for_photos: "Click to View Photos & Setup Details"
   },
   es: {
-    welcome_title: "Bienvenidos a Garcia Jumpers",
+    welcome_title: "Bienvenidos a CG Event Rentals",
     welcome_desc: "¡Su opción local para alquileres de fiestas! Tenemos inflables, carpas, sillas, mesas y decoraciones para hacer que su evento sea perfecto.",
     explore_title: "Explore Nuestros Productos",
     search_placeholder: "Buscar carpas, manteles, inflables...",
@@ -645,7 +645,7 @@ export const uiTranslations = {
     form_msg_label: "Detalles del equipo y preguntas",
     form_msg_placeholder: "Díganos qué artículos le interesan (ej. Carpa 20x20, Castillo Inflable)...",
     form_submit_btn: "Preparar Consulta de Alquiler",
-    form_success_title: "✅ ¡Mensaje de Consulta Creado!",
+    form_success_title: "¡Mensaje de Consulta Creado!",
     form_success_desc: "Dado que este sitio web no se conecta a una base de datos, complete su solicitud de alquiler por uno de estos medios:",
     form_success_call: "Llamando al",
     form_success_email: "Enviando correo",

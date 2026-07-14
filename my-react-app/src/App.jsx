@@ -2,8 +2,6 @@ import { useState } from 'react'
 import Navbar from '../components/Navbar.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-import { contactInfo } from './productsData.js'
-import './App.css'
 
 function App() {
   const [activeTab, setActiveTab] = useState('all');
@@ -11,19 +9,18 @@ function App() {
 
   return (
     <>
-      <Navbar 
-        activeTab={activeTab} 
-        setActiveTab={setActiveTab} 
-        contactInfo={contactInfo}
+      <Navbar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
         language={language}
         setLanguage={setLanguage}
       />
       {activeTab === 'about' ? (
         <About language={language} />
       ) : (
-        <Home 
-          activeTab={activeTab} 
-          setActiveTab={setActiveTab} 
+        <Home
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
           language={language}
         />
       )}

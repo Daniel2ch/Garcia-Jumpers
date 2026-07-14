@@ -23,37 +23,28 @@ const Home = ({ activeTab, setActiveTab, language }) => {
   // Filter products by active tab AND search query
   const filteredProducts = products.filter(product => {
     const matchesCategory = activeTab === 'all' || product.category === activeTab;
-    
+
     // Check fields based on language
     const name = language === 'es' ? product.nameEs : product.name;
     const shortDesc = language === 'es' ? product.shortDescEs : product.shortDesc;
     const specs = language === 'es' ? product.specsEs : product.specs;
 
-    const matchesSearch = 
+    const matchesSearch =
       name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       shortDesc.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (specs && specs.some(spec => spec.toLowerCase().includes(searchQuery.toLowerCase())));
-      
+
     return matchesCategory && matchesSearch;
   });
 
   return (
     <div className="home-container">
-      {/* Header / Hero Section
-          ─────────────────────────────────────────────────
-          TO ADD A BACKGROUND IMAGE:
-          Place your image in the /images/ folder, then update
-          the CSS class ".homeHeader" in Home.css. There is a
-          background-image property set up for you — just change
-          the url() path. Example:
-            background-image: url('../../images/yourPhoto.jpeg');
-          ─────────────────────────────────────────────────
-      */}
+      {/* Hero Section */}
       <header className="homeHeader">
         <div className="hero-overlay">
           <h1>{t.welcome_title}</h1>
           <p>{t.welcome_desc}</p>
-          
+
           {/* Contact Info Quick Banner */}
           <div className="quick-contact-banner">
             <span>📞 Call: <strong>{contactInfo.phone}</strong></span>
@@ -66,7 +57,7 @@ const Home = ({ activeTab, setActiveTab, language }) => {
       {/* Main Catalog Section */}
       <main id="products-section" className="catalog-section">
         <h2 className="section-title">{t.explore_title}</h2>
-        
+
         {/* Search and Filter Row */}
         <div className="catalog-controls">
           {/* Search bar */}
@@ -74,9 +65,9 @@ const Home = ({ activeTab, setActiveTab, language }) => {
             <svg className="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
-            <input 
-              type="text" 
-              placeholder={t.search_placeholder} 
+            <input
+              type="text"
+              placeholder={t.search_placeholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-input"
@@ -121,14 +112,14 @@ const Home = ({ activeTab, setActiveTab, language }) => {
                   {/* Photo Container with instructions */}
                   <div className="product-image-container" onClick={() => setSelectedProduct(product)}>
                     <img src={mainImage} alt={productName} className="product-card-img" />
-                    
+
                     {/* Floating Info Overlay for multiple photos */}
                     {product.images && product.images.length > 1 && (
                       <span className="multiple-photos-badge">
                         📸 {product.images.length} {t.multiple_photos_badge}
                       </span>
                     )}
-                    
+
                     <div className="img-hover-overlay">
                       <span>{t.click_for_photos}</span>
                     </div>
@@ -138,7 +129,7 @@ const Home = ({ activeTab, setActiveTab, language }) => {
                   <div className="product-card-body">
                     <span className="product-card-category">{product.category}</span>
                     <h3 className="product-card-title">{productName}</h3>
-                    
+
                     {/* Price Placeholder Box */}
                     <div className="price-tag-container">
                       <span className="price-tag">{productPrice}</span>
@@ -146,15 +137,15 @@ const Home = ({ activeTab, setActiveTab, language }) => {
                     </div>
 
                     <p className="product-card-desc">{productShortDesc}</p>
-                    
+
                     {/* Customize Instruction for Developer */}
                     <div className="card-customization-notice">
                       🔧 ID: <code>{product.id}</code> in productsData.js
                     </div>
 
                     {/* View Details CTA Button */}
-                    <button 
-                      className="card-details-btn" 
+                    <button
+                      className="card-details-btn"
                       onClick={() => setSelectedProduct(product)}
                     >
                       {t.btn_view_details}
@@ -177,7 +168,7 @@ const Home = ({ activeTab, setActiveTab, language }) => {
       {/* Footer / Contact Section — No booking form, just contact info */}
       <footer id="contact-section" className="contact-footer">
         <div className="footer-content">
-          
+
           {/* Business details */}
           <div className="footer-info">
             <h2>Garcia Jumpers</h2>
@@ -234,9 +225,9 @@ const Home = ({ activeTab, setActiveTab, language }) => {
 
       {/* Product Details Modal Component */}
       {selectedProduct && (
-        <ProductModal 
-          product={selectedProduct} 
-          onClose={() => setSelectedProduct(null)} 
+        <ProductModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
           contactInfo={contactInfo}
           language={language}
         />

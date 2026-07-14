@@ -24,19 +24,10 @@
   margin-top: 20px;
   margin-bottom: 50px;
   padding: 0;
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
-
-  background-image: url('../../images/allJumpers.jpeg');
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #1a5c2e;
 }
 
 .hero-overlay {
