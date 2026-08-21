@@ -575,14 +575,14 @@ export const contactInfo = {
 export const uiTranslations = {
   en: {
     welcome_title: "Welcome to CG Event Rentals",
-    welcome_desc: "Your local choice for party rentals! We have bouncy houses, tents, chairs, tables, and decorations to make your event perfect.",
+    welcome_desc: "We service the valley and surrounding areas! We have bouncy houses, tents, chairs, tables, and decorations to make your event perfect.",
     explore_title: "Explore Our Products",
     search_placeholder: "Search tents, covers, slides...",
     price_placeholder_label: "Price Placeholder",
     btn_view_details: "View Details & Photos",
     no_results: "No products found matching",
     btn_reset_filters: "Reset Filters",
-    footer_tagline: "We provide clean, safe, and professional party rentals. Browse our collection and contact us to secure your equipment today!",
+    footer_tagline: "Browse our collection of products and give us a call or email us to reserve your date!",
     footer_phone_title: "Phone Number",
     footer_email_title: "Email Address",
     footer_hours_title: "Working Hours",
@@ -620,7 +620,10 @@ export const uiTranslations = {
     change_phone_tip: "Change phone in productsData.js",
     change_email_tip: "Change email in productsData.js",
     multiple_photos_badge: "Photos",
-    click_for_photos: "Click to View Photos & Setup Details"
+    click_for_photos: "Click to View Photos & Setup Details",
+    jumpers_title: "Jumpers",
+    tentsChairsTables: "Tents, Chairs & Tables",
+    decorations: "Decorations"
   },
   es: {
     welcome_title: "Bienvenidos a CG Event Rentals",

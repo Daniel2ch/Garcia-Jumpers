@@ -57,44 +57,56 @@ body {
 
 .nav-link-btn {
   text-decoration: none;
-  color: #333333;
+  background-color: #1a5c2e;
+  color: #ffffff;
+  font-weight: 700;
   font-size: 14px;
-  font-weight: 600;
-  padding: 8px 16px;
+  padding: 10px 22px;
   border-radius: 6px;
+  border: none;
   transition: all 0.2s ease;
 }
 
 .nav-link-btn:hover {
-  color: #1a5c2e;
-  background-color: #f0f9f2;
+  background-color: #2d7a45;
+  transform: translateY(-1px);
 }
 
-.nav-link-btn.active {
-  color: #1a5c2e;
-  background-color: #e8f5ec;
+.browseLink {
+  text-decoration: none;
+  background-color: #1a5c2e;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.browseLink:hover {
+  background-color: #2d7a45;
+  transform: translateY(-1px);
 }
 
 .lang-toggle-btn {
   background: none;
   border: 1px solid #e0e0e0;
-  color: #555555;
-  font-family: 'Inter', Tahoma, sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
   cursor: pointer;
-  padding: 7px 14px;
   border-radius: 6px;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 5px;
+  padding: 10px 22px;
 }
 
 .lang-toggle-btn:hover {
-  color: #1a5c2e;
   border-color: #2d7a45;
-  background-color: #f0f9f2;
+  background-color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .nav-links a.contact-nav-btn {
@@ -104,16 +116,14 @@ body {
   font-weight: 700;
   font-size: 14px;
   padding: 10px 22px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 2px 8px rgba(26, 92, 46, 0.2);
+  transition: all 0.2s ease;
 }
 
 .nav-links a.contact-nav-btn:hover {
   background-color: #2d7a45;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(26, 92, 46, 0.3);
 }
 
 /* ═══════════ MODAL ═══════════ */

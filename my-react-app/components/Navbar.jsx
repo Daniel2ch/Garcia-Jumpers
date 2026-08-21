@@ -1,14 +1,25 @@
 import logoImg from '../images/Logo.jpeg';
 
 const Navbar = ({ activeTab, setActiveTab, language, setLanguage }) => {
+  // handle when the logo is clickled
   const handleLogoClick = (e) => {
     e.preventDefault();
-    setActiveTab('all');
+    setActiveTab('home');
 
     // Smooth scroll to top of page
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Handle the browse button clicked
+  const handleBrowseClick = (e) => {
+    e.preventDefault();
+    setActiveTab('all');
+
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Handle when contact is clicked
   const handleContactClick = (e) => {
     e.preventDefault();
 
@@ -30,6 +41,7 @@ const Navbar = ({ activeTab, setActiveTab, language, setLanguage }) => {
     }
   };
 
+  // Handle when about is clicked
   const handleAboutClick = (e) => {
     e.preventDefault();
     setActiveTab('about');
@@ -40,30 +52,41 @@ const Navbar = ({ activeTab, setActiveTab, language, setLanguage }) => {
   const contactText = language === 'es' ? 'Contacto' : 'Contact';
   const aboutText = language === 'es' ? 'Acerca de' : 'About';
   const langToggleText = language === 'en' ? 'Español' : 'English';
+  const browseText = language === 'es' ? 'Explorar' : 'Browse';
 
   return (
     <div className="navBar">
       <a href="/" onClick={handleLogoClick} className="logo">
         <img src={logoImg} alt="Garcia Jumpers Logo" className="logo-img" />
       </a>
-      <div className="nav-links">
-        {/* About Link */}
-        <a
-          href="#about"
-          onClick={handleAboutClick}
-          className={`nav-link-btn ${activeTab === 'about' ? 'active' : ''}`}
-        >
-          {aboutText}
-        </a>
 
+      <div className="nav-links">
         {/* Language Alternator Button */}
         <button
           onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
           className="lang-toggle-btn"
           title={language === 'en' ? 'Cambiar a Español' : 'Switch to English'}
         >
-          🌐 {langToggleText}
+        {langToggleText}
         </button>
+
+        {/* Browse Link */}
+        <a
+          href="#Browse"
+          onClick={handleBrowseClick}
+          className="browseLink"
+        >
+        {browseText}
+        </a>
+
+        {/* About Link */}
+        <a
+          href="#about"
+          onClick={handleAboutClick}
+          className={`nav-link-btn ${activeTab === 'about' ? 'active' : ''}`}
+        >
+        {aboutText}
+        </a>
 
         {/* Contact Scroll Button */}
         <a
