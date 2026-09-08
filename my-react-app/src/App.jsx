@@ -24,7 +24,7 @@ function App() {
     page = <About language={language} />;
   }
   else if (activeTab === "home") {
-    page = <Home language={language} />;
+    page = <Home language={language} setActiveTab={setActiveTab} />;
   }
   // if activeTab is "all", page becomes the Home component.
   else {

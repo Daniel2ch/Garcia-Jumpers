@@ -1,14 +1,4 @@
-/**
- * BILINGUAL PRODUCTS DATA FILE (Garcia Jumpers)
- * 
- * INSTRUCTIONS:
- * -------------------------------------------------------------
- * 1. PHOTOS: Update the "images" array for any product. Add URLs (e.g. "/images/photo.jpg").
- * 2. PRICES & DETAILS: Customize the English fields and their Spanish equivalents (*Es)
- *    to make sure changes reflect when toggling languages.
- * 3. GLOBAL LABELS: General interface text is translated in the `uiTranslations` object at the bottom.
- * -------------------------------------------------------------
- */
+
 
 export const categories = [
   { id: 'all', title: 'All Products', titleEs: 'Todos los Productos' },
@@ -434,8 +424,11 @@ export const products = [
       'Requiere acceso constante a 1 toma de corriente estándar'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Bouncy+Castle+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Bouncy+Castle+-+Photo+2+(Replace+in+productsData.js)'
+      '../images/Jumper3.jpeg',
+      '../images/Jumper4.jpeg',
+      '../images/Jumper7.jpeg',
+      '../images/Jumper8.jpeg',
+      '../images/Jumper9.jpeg',
     ]
   },
   {
@@ -563,8 +556,8 @@ export const contactInfo = {
   emailLabelEs: 'Reemplace con su correo en productsData.js',
   workingHours: 'Monday - Sunday: 8:00 AM - 7:00 PM',
   workingHoursEs: 'Lunes - Domingo: 8:00 AM - 7:00 PM',
-  serviceAreas: 'Serving our local counties, cities, and surrounding communities.',
-  serviceAreasEs: 'Sirviendo a nuestros condados, ciudades locales y comunidades aledañas.',
+  serviceAreas: 'Serving the Valley and surrounding areas!',
+  serviceAreasEs: 'Sirviendo a el valle y áreas aledañas.',
   socials: {
     facebook: '#',
     instagram: '#',
@@ -623,7 +616,19 @@ export const uiTranslations = {
     click_for_photos: "Click to View Photos & Setup Details",
     jumpers_title: "Jumpers",
     tentsChairsTables: "Tents, Chairs & Tables",
-    decorations: "Decorations"
+    decorations: "Decorations",
+    trioCard1: "Jumpers",
+    trioCard2: "Tents, Chairs & Tables",
+    trioCard3: "Decorations",
+    homeJumperTitle: "Bounce Houses for All Ages",
+    homeJumperDesc: "From classic bounce castles to thrilling water slides, we have options for every age group and event type.",
+    homeJumperBtn: "View Jumpers",
+    homeTentTitle: "Tents, Tables & Chairs",
+    homeTentDesc: "We offer tents in multiple sizes, rectangular and round tables, standard folding chairs, and elegant Chiavari chairs for any occasion.",
+    homeTentBtn: "View Tents & Tables",
+    homeDecorationTitle: "Elegant Decorations",
+    homeDecorationDesc: "Chair covers, tablecloths, and more to give your event a polished professional touch.",
+    homeDecorationBtn: "View Decorations"
   },
   es: {
     welcome_title: "Bienvenidos a CG Event Rentals",
