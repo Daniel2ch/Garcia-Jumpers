@@ -35,9 +35,7 @@ export const products = [
       'Agregue comentarios o detalles específicos aquí'
     ],
     images: [
-      '../images/tent2.jpeg',
-      '../images/tent3.jpeg',
-      '../images/tent4.jpeg'
+      '../images/tent7.jpeg',
     ]
   },
   {
@@ -64,8 +62,7 @@ export const products = [
       'Agregue comentarios o detalles específicos aquí'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=26x26+Tent+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=26x26+Tent+-+Photo+2+(Replace+in+productsData.js)'
+      '../images/tent4.jpeg',
     ]
   },
   {
@@ -92,7 +89,8 @@ export const products = [
       'Capacidad aproximada de 50 personas sentadas'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=32x16+Tent+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/tent2.jpeg',
+      '../images/tent8.jpeg',
     ]
   },
   {
@@ -119,7 +117,8 @@ export const products = [
       'Paredes laterales opcionales disponibles'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=26x20+Tent+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/tent5.jpeg',
+      '../images/tent2.jpeg',
     ]
   },
   {
@@ -146,8 +145,9 @@ export const products = [
       'Material de grado comercial de alta resistencia'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=40x20+Tent+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=40x20+Tent+-+Photo+2+(Replace+in+productsData.js)'
+      '../images/tent10.jpeg',
+      '../images/tent3.jpeg',
+
     ]
   },
   {
@@ -174,7 +174,7 @@ export const products = [
       'El precio varía según el tamaño de la carpa'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=String+Lights+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/tent6.jpeg',
     ]
   },
 
@@ -203,7 +203,11 @@ export const products = [
       'Incluye opciones para lazos/cintas de colores'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Seat+Covers+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/decorations9.jpeg',
+      '../images/decorations12.jpeg',
+      '../images/decorations20.jpeg',
+      '../images/decorations21.jpeg',
+      '../images/decorations22.jpeg',
     ]
   },
   {
@@ -230,7 +234,9 @@ export const products = [
       'Ajuste ceñido de spandex o estilos de falda elegante'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Rectangular+Table+Covers+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/decorations2.jpeg',
+      '../images/decorations3.jpeg',
+      '../images/decorations20.jpeg',
     ]
   },
   {
@@ -257,7 +263,48 @@ export const products = [
       'Varios colores disponibles a pedido'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Round+Table+Covers+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/decorations14.jpeg',
+      '../images/decorations23.jpeg',
+      '../images/decorations25.jpeg',
+      '../images/decorations31.jpeg',
+    ]
+  },
+
+  // --- Backdrops ---
+  {
+    id: 'back-drop',
+    name: 'Backdrop',
+    nameEs: 'Fondo',
+    category: 'decorations',
+    price: '$XX.XX',
+    priceEs: '$XX.XX',
+    priceLabel: 'Replace with backdrop price in productsData.js',
+    priceLabelEs: 'Reemplace con precio de fondo en productsData.js',
+    shortDesc: 'Add the perfect backdrop to your party!',
+    shortDescEs: '¡Añada el telón de fondo perfecto a su fiesta!',
+    detailedDesc: 'Backdrops help complete the atmosphere of any event. Choose from a variety of designs and styles to perfectly match your party theme. Easy to set up and adds a professional touch to your photos and decorations.',
+    detailedDescEs: 'Los fondos ayudan a completar la atmósfera de cualquier evento. Elija entre una variedad de diseños y estilos para que coincida perfectamente con el tema de su fiesta. Fácil de instalar y agrega un toque profesional a sus fotos y decoraciones.',
+    specs: [
+      'Backdrop size: 8ft x 8ft (can vary depending on design)',
+      'Easy to transport and assemble',
+      'Available in a variety of colors and designs'
+    ],
+    specsEs: [
+      'Luz de anillo con brillo y temperatura ajustables',
+      'Compartido digital instantáneo (requiere Wi-Fi)',
+      'Plantillas personalizadas para superposiciones y marcos'
+    ],
+    images: [
+      '../images/decorations28.jpeg',
+      '../images/decorations8.jpeg',
+      '../images/decorations11.jpeg',
+      '../images/decorations15.jpeg',
+      '../images/decorations27.jpeg',
+      '../images/decorations29.jpeg',
+      '../images/decorations5.jpeg',
+      '../images/decorations7.jpeg',
+      '../images/decorations13.jpeg',
+      '../images/decorations18.jpeg',
     ]
   },
 
@@ -286,7 +333,8 @@ export const products = [
       'Limpias y desinfectadas antes de cada alquiler'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Standard+Chairs+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/chairs1.jpeg',
+      '../images/chairs2.jpeg',
     ]
   },
   {
@@ -313,7 +361,11 @@ export const products = [
       'Fácil de cubrir con manteles rectangulares'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Rectangular+Tables+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/decorations21.jpeg',
+      '../images/decorations2.jpeg',
+      '../images/decorations3.jpeg',
+      '../images/decorations9.jpeg',
+      '../images/decorations20.jpeg',
     ]
   },
   {
@@ -340,7 +392,12 @@ export const products = [
       'Cojines opcionales para mayor comodidad'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Chiavari+Chairs+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/decorations36.jpeg',
+      '../images/decorations25.jpeg',
+      '../images/decorations17.jpeg',
+      '../images/decorations10.jpeg',
+      '../images/decorations24.jpeg',
+
     ]
   },
   {
@@ -367,7 +424,13 @@ export const products = [
       'Ideal para usar con manteles redondos'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Round+Tables+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/decorations14.jpeg',
+      '../images/decorations23.jpeg',
+      '../images/decorations25.jpeg',
+      '../images/decorations31.jpeg',
+      '../images/decorations32.jpeg',
+      '../images/decorations12.jpeg',
+      '../images/decorations19.jpeg',
     ]
   },
   {
@@ -394,8 +457,9 @@ export const products = [
       'Perfecto para fondos de sesiones de fotos y asientos principales'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Throne+Chairs+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Throne+Chairs+-+Photo+2+(Replace+in+productsData.js)'
+      '../images/decorations18.jpeg',
+      '../images/decorations5.jpeg',
+      '../images/decorations7.jpeg',
     ]
   },
 
@@ -455,8 +519,7 @@ export const products = [
       'Generosa zona de piscina de agua al final'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Single+Water+Slide+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Single+Water+Slide+-+Photo+2+(Replace+in+productsData.js)'
+      '../images/jumper2.jpeg'
     ]
   },
   {
@@ -483,7 +546,7 @@ export const products = [
       'Gran piscina de agua al final'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Double+Water+Slide+-+Photo+1+(Replace+in+productsData.js)'
+      '../images/Jumper6.jpeg',
     ]
   },
   {
@@ -510,8 +573,7 @@ export const products = [
       'Ajustes de velocidad desde principiante hasta profesional'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Mechanical+Bull+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Mechanical+Bull+-+Photo+2+(Replace+in+productsData.js)'
+      '../images/bull1.jpeg',
     ]
   },
 
@@ -540,9 +602,8 @@ export const products = [
       'Plantillas personalizadas para superposiciones y marcos'
     ],
     images: [
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Digital+Photo+Booth+-+Photo+1+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Digital+Photo+Booth+-+Photo+2+(Replace+in+productsData.js)',
-      'https://placehold.co/600x400/e2e8f0/0f172a?text=Digital+Photo+Booth+-+Photo+3+(Replace+in+productsData.js)'
+      '../images/photobooth1.jpeg',
+      '../images/photobooth2.jpeg',
     ]
   }
 ];
